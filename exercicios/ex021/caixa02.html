@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightcoral;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        header >h1{
+            text-align: center;
+        }
+        nav{
+            background-color: rebeccapurple;
+            padding: 4px;
+            box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.548);
+        }
+        nav>a{
+            text-decoration: none;
+            color: orange;
+            margin-right: 10px;
+        }
+        a:hover {
+            color: orangered;
+            border: 1px solid black;
+        } 
+        main {
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: brown;
+            color: white;
+            font-weight: bold;
+            text-align: right;
+            margin: 0px;
+            padding-right: 10px;
+        }
+        aside {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: cadetblue;
+            margin: 5px 0px;
+            border: 1px solid black;
+            border-radius: 3px 20px 20px 20px;
+        }
+        article, aside>p {
+            text-align: justify ;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grouping Tags</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Artigo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A illum eveniet facere blanditiis voluptate adipisci est, ut totam explicabo ullam odio saepe fuga eum iusto sequi ea impedit amet quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur esse ratione earum hic doloribus maxime dolores recusandae repellat amet neque, officiis, inventore blanditiis maiores voluptatibus deleniti dolor. Tempore, voluptatem.                        
+                </p>
+            </article>
+            <article>
+                <h2>Artigo 2</h2>
+                <p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A illum eveniet facere blanditiis voluptate adipisci est, ut totam explicabo ullam odio saepe fuga eum iusto sequi ea impedit amet quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur esse ratione earum hic doloribus maxime dolores recusandae repellat amet neque, officiis, inventore blanditiis maiores voluptatibus deleniti dolor. Tempore, voluptatem.</p>
+                <aside>
+                    <h2>Conteudo periférico 2</h2>
+                </aside>
+            </article>
+        </section>
+
+        <aside id="complementar">
+            <h2>Conteúdo periférico</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aperiam, voluptates voluptatibus qui error unde magnam eos iure tempore beatae iste vel. Sapiente necessitatibus placeat culpa eum iste, molestiae laudantium.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Natam Mafra</p>
+    </footer>
+</body>
+</html>
