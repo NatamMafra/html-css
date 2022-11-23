@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        div.container {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.116);
+            width: 90vw;
+        }
+
+        p {
+            display: flex;
+            flex-direction: column;
+        }
+
+        p input {
+            width: 60vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">        
+        <h1>Cadastre-se aqui!</h1>
+        <form action="cadastro.php" method="get">
+            <p>
+                Nome:
+                <input type="text" name="nome" id="nome">
+                <input type="submit" value="Cadastrar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
