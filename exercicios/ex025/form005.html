@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form method="get" autocomplete="on">
+        <fieldset>
+            <!-- É necessário que todas as opções de campo radio possuam o mesmo "name", para que seja possível marcar e desmarcar as mesmas -->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masculino" value="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" name="sexo" id="feminino" value="feminino">
+            <label for="feminino">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esporte Favorito</legend>
+            <input type="checkbox" name="basquete" id="basquete">
+            <label for="basquete">Basquete</label>
+            <input type="checkbox" name="futebol" id="futebol">
+            <label for="futebol">Futebol</label>
+            <input type="checkbox" name="volei" id="volei">
+            <label for="volei">Vôlei</label>
+            <input type="checkbox" name="futsal" id="Futsal">
+            <label for="futsal">Futsal</label>
+
+        </fieldset>
+
+        <p>    
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
