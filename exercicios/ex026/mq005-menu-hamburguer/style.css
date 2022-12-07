@@ -79,3 +79,23 @@ article>p {
     text-indent: 30px;
 }
 
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    header>menu>ul>li {
+        display: inline-block;
+    }
+
+    body>main {
+        width: 691px;
+    }
+
+
+}
