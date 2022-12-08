@@ -303,3 +303,34 @@ h2 {
     font-size: 2.5em;
 
 }
+
+
+div.teste2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.result {
+    background-color: blue;
+    padding: 10px;
+    display: none;
+}
+
+.acionador {
+    cursor: pointer;
+    display: none;
+}
+
+.btncheck {
+
+}
+
+.acionador:checked ~ .result{
+    background-color: #08DE04;
+    display: block;
+    
+}
+
