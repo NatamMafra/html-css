@@ -21,7 +21,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightgray;
+
 }
 
 main {
@@ -35,13 +35,13 @@ main {
 }
 
 a, h1 {
-    font-size: ;
+    font-size: 0.95em;
 }
 
 section.inicial-page {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100%;
     padding: 40px 40px;
 
@@ -54,19 +54,35 @@ section > header {
     justify-content: space-between;
 }
 
+div.foco {
+    margin-top: 120px;
+}
 section a {
     color: black;
-    font-weight: 600;
+}
+
+section div .texto-principal {
+    font-size: 3.8em;
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+section div.action-btn {
+    margin-left: 50px;
+
 }
 
 section div.action-btn > .btn1 {
     background-color: black;
     color: white;
+    font-weight: lighter;
 
 }
 
 section div.action-btn a {
     padding: 20px;
+    
 }
 
 section.image {
@@ -79,4 +95,62 @@ section.image {
 img {
     width: 423px;
     
+}
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        justify-content: center;
+        width: 820px;
+    }
+
+    section div .texto-principal {
+        font-size: 3em;
+        width: 300px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }    
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        height: 409px;
+        width: 600px;
+    }
+    
+    img {
+        width: 300px;
+    }
+
+    section.inicial-page {
+        width: 300px;
+    }
+
+    section div .texto-principal {
+        width: 200px;
+        font-size: 2em;
+        margin-left: 20px;
+    }
+    
+    section div.action-btn {
+        margin-left: 20px;
+
+    }
+
+    div.foco {
+        margin-top: 80px;
+    }  
+
+}
+
+@media screen and (max-width: 635px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        height:700px;
+        width: 300px;
+}
+
 }
